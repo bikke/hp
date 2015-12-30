@@ -1,0 +1,284 @@
+body
+{
+	color: [TextColor];
+	background-color: [SubColor];
+	[BackgroundImage]background-image: url([BackImage]);
+	margin: 30px;
+}
+
+a:link
+{
+	color: [LinkColor];
+	background-color: inherit;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: [HoverColor];
+	background-color: inherit;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: [VisitedColor];
+	background-color: inherit;
+	text-decoration: none;
+}
+
+div.header, div.footer
+{
+	color: [HeaderColor];
+	background-color: inherit;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+table.main
+{
+	color: inherit;
+	background-color: inherit;
+	border: 3px solid [MainColor];
+	border-collapse: collapse;
+}
+
+tr.header, tr.footer
+{
+	color: inherit;
+	background-color: [MainColor];
+}
+
+tr.contents
+{
+	color: inherit;
+	background-color: [BalanceColor];
+}
+
+td.contents_left, td.contents_right
+{
+	width: 30px;
+}
+
+table.photolist, table.photo_contents
+{
+	color: inherit;
+	background-color: [BalanceColor];
+}
+
+img.thumbnail
+{
+	border: none;
+	margin: 4px 2px;
+}
+
+div.photoinfo
+{
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	font-size: 80%;
+}
+
+a.homepage_link
+{
+ 	width: 180px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [LinkColor];
+	background-color: [LinkBgColor];
+	border: 1px solid [LinkColor];
+	padding: 2px 2px;
+}
+
+a.homepage_link:hover
+{
+ 	width: 180px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+a.toppage_link
+{
+ 	width: 160px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [LinkColor];
+	background-color: [LinkBgColor];
+	border: 1px solid [LinkColor];
+	padding: 2px 2px;
+}
+
+a.toppage_link:hover
+{
+ 	width: 160px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+a.prevpage_link, a.nextpage_link
+{
+ 	width: 60px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [LinkColor];
+	background-color: [LinkBgColor];
+	border: 1px solid [LinkColor];
+	padding: 2px 2px;
+}
+
+a.prevpage_link:hover, a.nextpage_link:hover
+{
+ 	width: 60px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+a.numpage_link
+{
+ 	width: 20px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [LinkColor];
+	background-color: [LinkBgColor];
+	border: 1px solid [LinkColor];
+	padding: 2px 2px;
+}
+
+a.numpage_link:hover
+{
+ 	width: 20px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+a.page_link
+{
+ 	width: 40px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [LinkColor];
+	background-color: [LinkBgColor];
+	border: 1px solid [LinkColor];
+	padding: 2px 2px;
+}
+
+a.page_link:hover
+{
+ 	width: 40px;
+ 	display: block;
+	text-align: center;
+ 	text-decoration: none;
+	font-size: 80%;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+span.numpage_current
+{
+ 	width: 20px;
+ 	display: block;
+	text-align: center;
+	font-size: 80%;
+	font-weight: bold;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+span.page_current
+{
+ 	width: 40px;
+ 	display: block;
+	text-align: center;
+	font-size: 80%;
+	font-weight: bold;
+	color: [HoverColor];
+	background-color: [HoverBgColor];
+	border: 1px solid [HoverColor];
+	padding: 2px 2px;
+}
+
+span.page_current_string
+{
+	text-align: center;
+	font-size: 80%;
+	color: [StringColor];
+	background-color: inherit;
+	padding: 2px 2px;
+}
+
+div.comment, div.pic_info
+{
+	color: [HeaderColor];
+	background-color: inherit;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+tr.comment, tr.pic_info
+{
+	color: [MainColor];
+	background-color: [BalanceColor];
+}
+
+td.comment_left, td.comment_right
+{
+	width: 8px;
+}
+
+td.pic_info_left
+{
+	width: 8px;
+	border-left: 3px solid [MainColor];
+}
+
+td.pic_info_right
+{
+	width: 8px;
+}
+
+div.slideshow_comment
+{
+	color: inherit;
+	background-color: inherit;
+}
