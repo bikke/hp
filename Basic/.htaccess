@@ -1,0 +1,9 @@
+#AuthUserFile /virtual/narabikke/public_html/www.narabikke.com/new_hp_soto/Basic/.htpasswd
+#AuthUserFile /virtual/narabikke/public_html/www.narabikke.com/new_hp_soto/usrman/.htpasswd
+AuthUserFile /virtual/narabikke/public_html/www.narabikke.com/new_hp_soto/Basic/.htpasswd
+AuthName "Please enter your ID and password"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
+

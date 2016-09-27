@@ -10,11 +10,10 @@
 	//color:#111111;		/*文字色*/
 	text-decoration:none;
 
-} 
+}
 
 body {
 	//font-size: 100%;
-	font-size: 23px;
 	line-height: 180%;
 	font-family: Arial,Helvetica,sans-serif;
 	//color: #000;
@@ -25,31 +24,84 @@ body {
 	//background-repeat:repeat-x;
 	//background-color:#cfffff;	/*ページ全体の背景色*/
 	//text-align:center;		/*IE6以下でセンタリングするための対策*/
+    position: relative;
+    font-size: 14px;
+    height: 100%;
+    color: #444;
+    font-family: "Quicksand", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
 }
+
 
 /*============================================
 コンテンツ（中央）
 ============================================*/
 div#content {
-	width:100%; 
-	margin: 0px 50px;
+	width:100%;
+	margin: 20px;
 	//width:600px; margin:10px 20px 10px 0px;	/*幅の指定と位置調整*/
-	float: center;				/*全体を右寄せにする*/
 	//background-image:url("b121.jpg");
-	//background-repeat:repeat-y;
-	//background-repeat:repeat-x;
-	
+
+
 }
+/*============================================
+横メニュー
+============================================*/
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+.menuBox {
+	width: 100%;
+	//margin: 10px 0;
+	background: #CC33FF;
+	font-weight: bold;
+}
+.menuBox p{
+	padding:20px;
+	position:relative;
+	background:#FF33FF;
+	text-decoration:none;
+	text-shadow:none;
+	color:#fff;
+	cursor:pointer;
+	text-align: center;
+}
+.menuBox p:hover {
+	background:#20160b;
+	transition-duration: 0.5s;
+}
+#slideMenu {
+	display:none;
+}
+#slideMenu li{
+	color:#fff;
+	text-align: center;
+	background:#000077;
+	padding:10px;
+	margin-bottom:1px;
+	text-shadow:none;
+	font-size:80%;
+	border-top:1px solid #8a735a;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#slideMenu li:hover{
+	background:#660000;
+	transition-duration: 0.5s;
+}
+
 /*============================================
 ヘッダ
 ============================================*/
 div#header2 {
-	
+
 	//width:100%;
 	//width: 920px;
 	height: 93px;
 	//height:77px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
-	background-image:url("back_anime0.gif");	/*ヘッダ部分の背景画像*/
+	background-image:url("back1.gif");	/*ヘッダ部分の背景画像*/
 	background-position: center;
 	background-repeat:no-repeat;		/*背景画像を繰り返さない*/
 	//background-repeat:repeat-x;
@@ -59,15 +111,17 @@ div#header2 {
 	//padding-bottom:38px;
 	//line-height:1.2;
 }
-
+a {
+	color:#f38630;
+}
 h1 {
 	padding:20px 0px 0px 35px;		/*見出し内容の位置調整*/
 	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
 	font-size:170%;
-	
+
 }
 h1 a {	text-decoration:none;/*リンクの下線を無くす*/
-} 			
+}
 h1 a:link { color: #000080; }
 h1 a:hover { color: #ff0000; }
 h1 a:active { color: #ff8000; }
@@ -87,8 +141,14 @@ h2{
 	font-size: 120%;
 	background-color:#80ffbf;
 	text-align: center;
-}
+	color: #000000;
 
+    font-weight: bold;
+    text-shadow: 5px 5px 1px #999999;
+}
+h2 a {	text-decoration:none;
+	color: #000000;
+}
 /* =========================
 	fullslider
 ========================== */
@@ -182,22 +242,44 @@ h2{
 /*========================================
 	メインコンテンツ
 ========================================*/
+.bikke {
+	margin-left:30px;
+	margin-right:30px;
+}
 .wrapper {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	text-align: center;
+	//text-align: center;
 	//font-size: 13px;
 	background: #F8F8F8;
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 	z-index: 2;
 }
+.wrapper .logo{
+	//margin-top:5px;
+	text-align: center;
+	//position:fixed;
+	
+}
+.wrapper .fixedlogo{
+	text-align: center;
+	position:fixed;
+	bottom: 2em;
+	left: -2.2em;
+	z-index: 0;
+	
+}
 .wrapper h2 {
 	background-image:url("back.gif");
 }
-.wrapper h3 {
-	margin-bottom: 10px;
+.wrapper  h3 {
+    font-size: 22px;
+    padding-bottom: 4px;
+    border-bottom: 2px dashed #111;
+    line-height: 1.6;
+    margin-top: 30px;
 }
 
 .side-open .wrapper,
@@ -206,6 +288,13 @@ h2{
 	//transform: translate3d(-300px, 0, 0);
 	-webkit-transform: translate3d(-38%, 0, 0);
 	transform: translate3d(-38%, 0, 0);
+}
+
+#mapsButton {
+    //width: 380px;
+    width: 85%;
+    margin: 5px;
+    text-align: center;
 }
 /* =======================================
 	メインコンテンツのカバー
@@ -232,17 +321,17 @@ h2{
 }
 
 .overlay::after {
-	content: "メニューを選択してね";
+	content: "menuを選んでね(・ω・)/";
 	visibility: hidden;
 	position: fixed;
 	top: 40%;
 	//left: 0;
 	//right: 0px;
 	display: block;
-	width: 102%;
+	width: 108%;
 	height: 50px;
 	color: rgba(255,255,255,0);
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	//text-align: center;
 	text-align: right;
@@ -253,6 +342,12 @@ h2{
 .side-open .overlay::after {
 	visibility: visible;
 	color: rgba(255,255,255,.8);
+}
+/* ================================================
+			description
+================================================== */
+.description{
+	text-align: center;
 }
 /* ================================================
 			header
@@ -271,45 +366,49 @@ h2{
 	-2px 2px 1px #00F,
 	2px -2px 1px #00F,
 	-2px -2px 1px #00F;
+	text-align: center;
 }
 .contents h1 {
 	margin-bottom: 30px;
 	font-size: 20px;
 	//color: #ffffff;
 }
+.header h1 a:text-aline:center;
 .header h1 a:link{color:#f0f8ff;}
 .header h1 a:hover { color: #ff0000; }
 .header h1 a:active { color: #ff8000; }
-.contents h3 {
-	padding: 150px 50px 250px;
-	letter-spacing: 0.3em;
-	line-height: 130%;
-	font-size: 80%;
-	color:#000080;
-	text-align: center;
-	padding: 10px;
-	
+.contents  h3 {
+    font-size: 22px;
+    padding-bottom: 4px;
+    border-bottom: 2px dashed #111;
+    line-height: 1.6;
+    margin-top: 30px;
 }
 .contents h3 a:link{color:#000080;}}
 
 .contents {
-	padding: 150px 50px 250px;
+	//padding: 150px 50px 250px;
 	//padding: 0px 150px;
-	
+
 }
 
 .contents p {
 	margin-bottom: 50px;
+	//padding: 15px;
 	//padding: 5px 50px 0px;
+	text-indent: 1em;
 }
 
 .footer {
-	padding: 100px 0;
-	background: #0000cd;
+	
+	text-align: center;
+	
 }
-
+.footer p{
+	
+}
 /* =======================================
-		 btn 
+		 btn
 ===========================================*/
 .btn__box {
 	position: relative;
@@ -364,7 +463,7 @@ h2{
 }
 
 /* =======================================
-	 side menu 
+	 side menu
 =========================================*/
 .side-menu {
 	position: fixed;
@@ -434,7 +533,7 @@ h2{
 }
 
 /* =========================================================
-			 ellipsis btn 
+			 ellipsis btn
 ==========================================================*/
 .side-menu-btn {
 	position: fixed;

@@ -1,0 +1,6 @@
+﻿<?php
+
+print <<< EOD
+	
+EOD;
+?>

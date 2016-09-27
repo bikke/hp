@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin:0;/*外側への余白*/
+	padding:0;/*内側への余白*/
+	font-size:12px;/*文字の大きさ*/
+	
+}
+
+#wrap{
+	
+	width:600px;/*横幅*/
+	margin:0 auto;/*全体を中央配置*/
+	
+}
+
+span{/*spanは特に意味を持たないタグです。装飾用などに使用します*/
+	
+	font-size:12px;/*文字の大きさ*/
+	color:#F00;/*文字の色*/
+	
+}
+
+table{
+	
+	border-collapse:collapse;/*テーブルのうち枠線を重ねて表示*/
+	width:598px;/*横幅*/
+	
+}
+
+th{/*thは見出しセルです。*/
+	
+	border:solid 1px #999;/*ボーダーを上下左右に実線で,1px,で#999で*/
+	background:#EEE;
+	width:190px;/*横幅*/
+	padding:5px;/*内側への余白上下左右5px*/
+	text-align:left;/*文字を左寄せ*/
+	
+	
+}
+
+td{
+	
+	border:solid 1px #999;/*ボーダーを上下左右に実線で,1px,で#999で*/
+	width:388px;/*横幅*/
+	padding:5px;/*内側への余白上下左右5px*/
+	
+}
+
+textarea{
+	
+	width:300px;/*横幅*/
+	height:150px;/*高さ*/
+	
+}
+
+.button{
+	
+	text-align:center;/*文字を中央寄せ*/
+	padding:10px 0;/*内側への余白上下10px*/
+	
+}

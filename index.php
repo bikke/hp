@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<?php
+header('X-FRAME-OPTIONS: DENY');
+?>
+<!DOCTYPE html>
 <html lang="ja"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
@@ -6,18 +9,20 @@
 		<meta name="description" content="スタイルが一新した京都大学テニスサークルBikkeのホームページです。メンバーは京大，奈良女を中心に様々な大学の学生で構成されています。テニスはもちろん、野球大会やバスケ・バレーボールとイベントも盛りだくさんです。" />
 		<meta name="keywords" content="京大,テニス,テニサー,テニスサークル,サークル,京都大学,奈良,bikke,BIKKE,びっけ,京大びっけ">
 		<title>京都大学テニスサークルびっけ</title>
-
+		
 		<link rel="stylesheet" type="text/css" href="css_direct/ver1_index.css" />
 		<link rel="stylesheet" href="js_direct/reset.css" media="all">
-
+		
 		<script src="js_direct/jquery.js"></script>
 		
 		<script type="text/javascript" src="js_direct/side_menu.js"></script>
 		<script type="text/javascript" src="js_direct/side.js"></script>
 		
+
 <!--<[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js_direct/fullslider.js"></script>
+
 	</head>
 <!--------------------------------------------------------->
 
@@ -25,41 +30,9 @@
 	<body class="">
 		<div class="overlay" id="js__overlay"></div>
 		<nav class="side-menu" id="js__sideMenu">
-			﻿<SCRIPT LANGUAGE="JavaScript">
-<!--
-function clock(){
-c = new Date();
-document.clk.digital.value=c.getHours()+":"+c.getMinutes()+":"+c.getSeconds();
-setTimeout('clock()',1000);
-}
-// -->
-</SCRIPT>
-<hr>
-<FORM NAME="clk">
-<INPUT SIZE"5" NAME="digital">
-</FORM>
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-clock();
-// -->
-</SCRIPT>
-<hr>
+			<?php include_once("php_direct/time.php"); ?>	
 			<ul class="side-menu__ul">
-			﻿<li><a href="home.php" target="_top">ＨＯＭＥ</a></li>
-				<li class="side-menu__li">
-					<h4>About</h4>
-					<ul class="side-menu__ul--child">
-						<li><a href="intro.php" target="_top">introduction</a></li>
-						<li><a href="practice.php" target="_top">practice</a></li>
-						<li><a href="schedule.php" target="_top">schedule</a></li>
-						<li><a href="access.php" target="_top">access</a></li>
-
-					</ul>
-				</li>
-				<li><a href="blog.php" target="_top">Blog</a></li>
-				<li><a href="link.php" target="_top">Link</a></li>
-				<li><a href="Basic/index.php" target="_top">Members Only</a></li>
-				<li>　</li><li>　</li><li>　</li><li>　</li><li>　</li>
+			<?php include_once("php_direct/side.php"); ?>	
 			</ul>
 		</nav>
 
@@ -72,40 +45,31 @@ clock();
 		</div>
 
 		<div class="wrapper">
-<div class="logo">
-  <img src="back/bikke_logo.png" alt="1" width="35%"/>
-</div>
+
+			<div class="logo">
+			  <img src="back/bikke_logo.png" alt="1"  width="35%" />
+			</div>
+
 <div class="fixedlogo">
 <p id="toPageTop"><a><img src="back/bikke_logo.png" alt="1" width="35%"/></a></p>
 </div>
 <script src="js_direct/scroll.js"></script>
 
+
 <div id="container">
 <div class="wideslider">
 <ul>
-<li><a href="#1"><img src="back/1.jpg" alt="1" /caption="HOME"></a></li>
+<li><a href="#1"><img src="back/1.jpg" alt="1" /></a></li>
 <li><a href="#2"><img src="back/2.jpg" alt="2" /></a></li>
 <li><a href="#3"><img src="back/3.jpg" alt="3" /></a></li>
 <li><a href="#4"><img src="back/4.jpg" alt="4" /></a></li>
 <li><a href="#5"><img src="back/5.jpg" alt="5" /></a></li>
 </ul>
 </div><!--/.wideslider-->
-<div class="menuBox">
-	<p id="switchButton"><em>M E N U</em></p>
-	<ul id="slideMenu">
-		<a href="home.php"><li>HOME</li></a>
-		<a href="intro.php"><li>Introduction</li></a>
-		<a href="practice.php"><li>Practice</li></a>
-		<a href="schedule.php"><li>Schedule</li></a>
-		<a href="access.php"><li>Access</li></a>
-		<a href="blog.php"><li>BLOG</li></a>
-		<a href="link.php"><li>LINK</li></a>
-		<a href="./Basic"><li>MEMBERS ONLY</li></a>
-	</ul>
-</div>
-
 </div><!--/#container-->
-
+<div class="menuBox">
+	<?php include_once("php_direct/side_menu.php"); ?>
+</div>
 <div class="description">
 				<p><a href="index.html">
           <img src="http://www.access-counter.net/services/imagedigits/counter.php?aut=9a474a52ffea77cd50d8a8ce5023145106465f30f227ac1f700f3bc084af0ee7c9186ae7148b088f8d7e3a1c" alt="無料カウンター" border="0" />番目のお客さん,
@@ -140,12 +104,28 @@ clock();
 	<h3>---新入生の皆さんへ---</h3>
 	<p>大学合格おめでとうございます＾＾<br>
 	大学生といえばサークル活動、サークル活動といえばびっけ(強引)！<br>
-	いったいどんなサークルなのか、気になりますね～☆</p></br>
+	いったいどんなサークルなのか、気になりますね～☆</p>
+<?php
+$save_file=dirname(__FILE__)."/Basic/inf/freshman.txt";
+if (!file_exists($save_file)) {
+    echo "　";
+    exit;
+}
+$msg = file_get_contents($save_file);
+$msg_html = htmlspecialchars($msg);
+$msg_html = str_replace("\n", "<br/>", $msg_html);
+echo <<< __HTML__
+    <div style="border: dashed 3px green; padding:12px;"> 
+    <div style="font-size:18px; color:#FF00FF;">
+        {$msg_html}
+    </div></div>
+__HTML__;
+?>
 
+</br>
 <hr><hr>
-<br>
-<span>＊＊お問い合わせは<a href="./phpform/inq01.php"><em>こちら</em></a>から＊＊</span><br>たくさんのご連絡ありがとうございます
-</hr></hr>
+<span>＊＊お問い合わせは<a href="./phpform/inq01.php">こちら</a>から＊＊</span>
+<hr><hr>
 				</section>
 			</main>
 
