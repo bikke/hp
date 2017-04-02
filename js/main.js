@@ -51,3 +51,14 @@ main();
 $(document).ready(function(){
   $('.parallax').parallax();
 });
+
+// modal func
+$(function(){
+  if($.cookie("access") == undefined) {
+    $('#top_modal').modal('show');//最初のアクセスの場合にモーダルを呼び出す
+    $.cookie("access","onece");
+    $(".mod_message").css("display","block")
+  } else {
+    //alert("二回目以降");
+  }
+});
