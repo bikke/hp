@@ -1,41 +1,490 @@
 ﻿<!DOCTYPE html>
-<html xml:lang="ja" lang="ja">
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-<meta name="description" content="京都大学テニスサークルBikkeのホームページです" />
-<meta name="keywords" content="京大,テニス,テニサー,テニスサークル,サークル,京都大学,奈良,bikke,BIKKE,びっけ,京大びっけ">
-<meta name="author" content="so">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Kyoto University Tennis Club BIKKE</title>
+  <meta name="keywords" content="bikke,びっけ,京都大学,奈良女子大学,テニスサークル,京大,奈良,サークル,テニス">
+  <meta name="description" content="京都大学硬式テニスサークルびっけのホームページです．">
+  <meta http-equiv="content-language" content="ja">
+  <meta name="google-site-verification" content="EmnD2yTSnCr5YKzT5F2psEkUQU1WLbni6JxcQCb_YgQ" /><!--serch console-->
 
-<title>京都大学テニスサークルびっけ</title>
-<link rel="stylesheet" type="text/css" href="http://black-flag.net/data/css/reset.css">
-<link rel="stylesheet" type="text/css" href="common.css">
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="fullslider.js"></script>
+  <!--CSS -->
+
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css"  href="css/materialize_changed.css">
+
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css"  href="css/glyphicons.css">
+  <link rel="stylesheet" type="text/css"  href="css/style.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-89537980-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+
+  <link rel="apple-touch-icon" href="img/bikke_ball_3.png" />
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div class="preloader"></div>
+  <!-- Modal -->
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" id="top_modal" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title"><i>びっけ</i>のホームページへようこそ</h4>
+        </div>
+        <div class="modal-body">
+          <p>スマートフォン以外でこのページをご覧になる際には，Google Chromeの使用を推奨します．<br>
+            その他のブラウザではスクロールがうまく出来ないことがあります．<br> </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <div class="wrapper">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a href="#page-top" class="page-scroll navbar-brand"><img src="img/bikke_logo.png" height="44"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controll="PageLink">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>About</a></li>
+            <li><a href="#schedule" class="page-scroll"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>Schedule</a></li>
+            <li><a href="#access" class="page-scroll"><span class="	glyphicon glyphicon-map-marker" aria-hidden="true"></span>Access</a></li>
+            <li><a href="#link" class="page-scroll"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Link</a></li>
+            <li><a href="#contact" class="page-scroll"><span class="glyphicon glyphicon-send" aria-hidden="true">Contact</a></li>
+            <li><a href="Basic/index.php"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Members Only</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="intro">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="intro-text">
+                <a href="#about" class="page-scroll" id="fadeout_id">
+                  <h1>BIKKE</h1>
+                  <p>Kyoto University Tennis Club since 1992</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <!-- About Section -->
+      <div class="contents">
+        <div id="about" class="text-center">
+          <div class="container">
+            <div class="section-title">
+              <h2>About BIKKE</h2>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                 <div class="row">
+                   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                       <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                     </ol>
+
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+                       <div class="item active">
+                         <a href="#schedule" class="page-scroll"><img src="back/10.jpg" alt="1" class="img-responsive thumbnail"></a>
+                         <div class="carousel-caption">
+                           <h4>Schedule</h4>
+                         </div>
+                       </div>
+                       <div class="item">
+                         <a href="#access" class="page-scroll"><img src="back/2.jpg" alt="3" class="img-responsive thumbnail"></a>
+                         <div class="carousel-caption">
+                           <h4>Access</h4>
+                         </div>
+                       </div>
+                       <div class="item">
+                         <a href="#link" class="page-scroll"><img src="back/6.jpg" alt="3" class="img-responsive thumbnail"></a>
+                         <div class="carousel-caption">
+                           <h4>Link</h4>
+                         </div>
+                       </div>
+                       <div class="item">
+                         <a href="#contact" class="page-scroll"><img src="back/11.jpg" alt="3" class="img-responsive thumbnail"></a>
+                         <div class="carousel-caption">
+                           <h4>Contact</h4>
+                         </div>
+                       </div>
+                     </div>
+
+                     <!-- Controls -->
+                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                       <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                       <span class="sr-only">Next</span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+              <div class="about-text">
+                <div class="col-xs-12 col-md-6">
+                  <div class="row effect1">
+                    <h3>BIKKEのホームページへようこそ〜〜</h3>
+                    <p>BIKKEは<a href="http://www.kyoto-u.ac.jp/ja">京都大学</a>の硬式テニスサークルです！</br>メンバーは京大，奈良女を中心に様々な大学の学生で構成されています。
+                      毎週土曜日、主に奈良市営のテニスコートを借りて練習を行っています。
+                      テニス以外にも、体育館を貸し切って球技をしたり、逃走中・密告中といったイベントも盛りだくさんです。
+                      また、1～２回生が主体の他のサークルとは異なり、学年が上がっても楽しめる、学部生だけでなく大学院生(修士/博士）、
+                      さらにはOB・OGとさまざまな年代の方々と関われるところがこのサークルの特色でもあります。</p>
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-6 col-xs-12 effect1">
+                        <h3>OB・OGの方へ</h3>
+                        <p>いつも温かいご支援ありがとうございます<br>
+                           いつまでもサークル活動を通した交流を大切にしていきたいと思います。<br>
+                           通常練習、イベント、合宿等へのご参加お待ちしています～～</p>
+                      </div>
+                      <div class="col-lg-6 col-sm-6 col-xs-12 effect1">
+                        <h3>新入生の方へ</h3>
+                        <p>大学合格おめでとうございます＾＾<br>
+                           大学生といえばサークル活動、サークル活動といえばびっけ(強引)！
+                           いったいどんなサークルなのか、気になりますね～☆<br>
+                           入会期限を設けてないため、新歓期を逃した〜という方も気軽に見学に来てください</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-title text-center" >
+              <a href="#more" class="page-scroll scrollto">
+                <h3>More</h3>
+                <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/4.jpg"></div>
+      </div>
+
+      <!-- Another Section -->
+      <div class="contents">
+        <div id="more" class="text-center">
+          <div class="container">
+            <div class="section-title">
+              <h2>BIKKEの由来</h2>
+              <hr>
+            </div>
+            <div class="effect1">
+              <h3>”びっけ”って変な名前～！？どういう意味なの？？・・・</h3>
+              <h4>って，誰もが思いましたよね。一体誰が名付けたんでしょうねぇ。(^^;)</h4>
+              <p>びっけの名前の由来はアニメ「小さなバイキングびっけ」（’74.4～’75.9放送）からきたそうです．<br>
+              ビッケのお父さん・ハルバル父さんは海賊船の船長さん． フラーケの仲間達と海を渡り遠征します．
+              毎回，さまざまなピンチがおとずれるが， ビッケ少年が人差し指で鼻の下をこすると知恵がヒラメキ問題解決！！という 一休さんの海賊版みたいなお話です．
+              </p>
+            </div>
+            <div class="section-title text-center" >
+              <a href="#schedule" class="page-scroll scrollto">
+                <h3>Schedule</h3>
+                <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/10.jpg"></div>
+      </div>
+
+      <!-- Schedule Section -->
+      <div class="contents">
+        <div id="schedule" class="text-center">
+          <div class="container">
+            <div class="section-title text-center center">
+              <h2>Schedule</h2>
+              <hr>
+            </div>
+            <div class="row effect1">
+              <h3>練習日程やコート情報、合宿の日程はこちらから</h3>
+
+                <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23ffffff&amp;src=97ivl9rq8bog5t0buetbri0huk%40group.calendar.google.com&amp;color=%23333333&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FTokyo" style="border-width:0; z-index:50;" width="100%" height="500" frameborder="0" scrolling="no"></iframe> -->
+                <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=7&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=97ivl9rq8bog5t0buetbri0huk%40group.calendar.google.com&amp;color=%23333333&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FTokyo" style="border-width:0" width="100%" height="500" frameborder="0" scrolling="yes"></iframe> -->
+                <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=7&amp;bgcolor=%23FFFFFF&amp;src=q9ad4903a0ggj0l71n72cj43og%40group.calendar.google.com&amp;color=%232952A3&amp;src=ja.japanese%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FTokyo" style="border-width:0" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="section-title text-center" >
+              <a href="#access" class="page-scroll scrollto">
+                <h3>Access</h3>
+                <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/2.jpg"></div>
+      </div>
+
+      <!-- Access Section -->
+      <div class="contents">
+        <div id="access" class="text-center">
+          <div class="container">
+            <div class="section-title text-center center">
+              <h2>Access</h2>
+              <hr>
+            </div>
+            <div class="effect1 map">
+              <h3><a href="http://www.city.nara.lg.jp/www/contents/1147675470700/index.html">鴻ノ池テニスコート</a></h3>
+              <hr>
+                <h4>土曜日は<a href="http://www.city.nara.lg.jp/www/contents/1147675470700/index.html">鴻ノ池</a>へ。　みんなが待ってます</h4>
+                <p>練習時間は9:00～12:00と13:00～17:00で、基本的に3コートを借りて3,40人程が集まって練習しています。<br>
+              午前<i>or</i>午後だけ参加も可能なので、他のサークルやバイトとの掛け持ちも可能です！<br>砂入り人工芝のコートなので体への負担も小さく、長時間練習しても疲れにくくなっています。</p>
+                <p><a href="https://www.google.co.jp/maps/place/%E9%B4%BB%E3%83%8E%E6%B1%A0%E3%82%B3%E3%83%BC%E3%83%88/@34.701403,135.827731,17z/data=!3m1!4b1!4m2!3m1!1s0x60013962da7f5495:0x2af9f5dd409860e1">奈良市法蓮佐保山四丁目１５１６番地の１</a></p><br>
+
+              <h3><a href="http://www.city.nara.lg.jp/www/contents/1147675660815/">青山テニスコート</a></h3>
+              <hr>
+                <h4>鴻ノ池から北上した閑静な住宅街に潜む<a href="http://www.city.nara.lg.jp/www/contents/1147675660815/">青山コート</a></h4>
+                <p>人工芝のオムニコートとは一転！<br>ここ青山コートはハードコートとなっているため、気分を変えて練習に打ち込めます。<br>練習時間は9:00～12:00と13:00～17:00。</p>
+                <p> <a href="https://www.google.co.jp/maps/place/%E5%A5%88%E8%89%AF%E5%B8%82%E7%AB%8B+%E9%9D%92%E5%B1%B1%E3%82%B3%E3%83%BC%E3%83%88%E3%83%BB%E3%83%97%E3%83%BC%E3%83%AB/@34.7060865,135.8308424,17z/data=!4m2!3m1!1s0x0000000000000000:0xfe9102a165bc329e">奈良市青山三丁目２番地</a></p><br>
+
+              <h3>佐保山テニスクラブコート</h3>
+              <hr>
+                <h4>練習後、シャワーが使える～～</h4>
+                <p>待合室には冷暖房が完備されており、ゆっくり休憩ができます。自由にシャワーが使えるのもいいですね。<br>練習時間は主に14:00～17:00。</p>
+                <p><a href="https://www.google.co.jp/maps/place/%E4%BD%90%E4%BF%9D%E5%B1%B1%E3%83%86%E3%83%8B%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%96/@34.7050105,135.8260144,17z/data=!4m2!3m1!1s0x0000000000000000:0xce325bfa0d8ce1f8">奈良県奈良市奈良阪町2650</a></p><br>
+
+              <h3><a href="http://www.city.nara.lg.jp/www/contents/1147675942004/index.html">市営佐保山テニスコート</a></h3>
+              <hr>
+                <h4>今週の練習場所、<a href="http://www.city.nara.lg.jp/www/contents/1147675942004/index.html">佐保山</a>ってこっちのことか。。</h4>
+                <p>佐保山には、民営と市営の2つのコートがあります。こちらは市営の方です。<br>よく<a href="http://www.city.nara.lg.jp/www/contents/1147675942004/index.html">練習場所</a>を確認しておかない		と、寂しい思いをします。<br>練習時間は9:00～17:00。</p>
+                <p><a href="https://www.google.co.jp/maps/place/%E4%BD%90%E4%BF%9D%E5%B1%B1%E3%82%B3%E3%83%BC%E3%83%88/@34.7066687,135.8193196,17z/data=!4m2!3m1!1s0x0000000000000000:0x3ab51154cff2f9d8">奈良市佐保台二丁目９０２番地の３７４</a><br>
+            </div>
+            <div class="section-title text-center" >
+              <a href="#goo_map" class="page-scroll scrollto">
+                <h3>Map</h3>
+                <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/22.jpg"></div>
+      </div>
+
+      <div class="contents">
+        <div class="text-center" style="padding:100px 0;">
+          <!-- Google Map -->
+          <div id="goo_map">
+            <div class="section-title text-center center" style="padding-top: 70px;">
+              <h2>Google Map</h2>
+              <hr>
+            </div>
+            <h3><span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span>Click</h3>
+            <div id="mapsButton">
+                <button onclick="func1()" class="btn btn-primary btn-lg active">　鴻ノ池　</button>
+                <button onclick="func2()" class="btn btn-primary btn-lg active">　青　山　</button>
+                <button onclick="func3()" class="btn btn-primary btn-lg active">佐保山ＴＣ</button>
+                <button onclick="func4()" class="btn btn-primary btn-lg active">市営佐保山</button>
+            </div>
+
+          </div>
+          <div id="map" style="width: 100%; height: 80vh; z-index:50;"></div>
+          <!-- <script type="text/javascript" src="http://www.google.com/jsapi/"></script> -->
+          <div class="contents">
+            <div class="section-title text-center">
+              <a href="#link" class="page-scroll scrollto">
+                <h3>Link</h3>
+                <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/6.jpg"></div>
+      </div>
+
+      <div class="contents">
+        <div id="link" class="text-center">
+          <div class="section-title text-center center">
+            <h2>Link</h2>
+            <hr>
+          </div>
+          <div class="effect1">
+            <h3>試合のドロー表などはこちらを参照してください</h3>
+            <p><a href="http://www2.hp-ez.com/hp/kta/page1">京都大学テニス同好会連盟【KTA】</a></p>
+            <p><a href="http://hccweb6.bai.ne.jp/jtca/">西日本硬式庭球同好会連盟【JTCA】</a></p>
+            <p><a href="http://star10-11.jimdo.com/">Student Tennis Association for Relief【S.T.A.R】</p>
+          </div>
+          <div class="section-title text-center" >
+            <a href="#contact" class="page-scroll scrollto">
+              <h3>Contact</h3>
+              <div class="scrollto--arrow"><img src="img/scroll_y.png" width="100" alt="scroll down arrow"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="back/11.jpg"></div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contents">
+      <div id="contact" class="text-center">
+        <div class="container">
+          <div class="section-title center">
+            <h2>Contact Us</h2>
+            <hr>
+            <p>Please feel free to contact us.</p>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <form class="form-horizontal" name="sentMessage" id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-xs-7">
+                  <div class="form-group">
+                    <input type="text" id="univ" class="form-control" placeholder="University" required="required">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-5">
+                  <p class="help-block">大学</p>
+                </div>
+                <div class="col-md-2 col-xs-7">
+                  <div class="form-group">
+                    <input type="text" id="fac" class="form-control" placeholder="Faculty" required="required">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-5">
+                  <p class="help-block">学部</p>
+                </div>
+                <div class="col-md-2 col-xs-7">
+                  <div class="form-group">
+                    <input type="text" id="dep" class="form-control" placeholder="Department" required="required">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-5">
+                  <p class="help-block">学科</p>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
 
 
-<div id="container">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-custom btn-lg">　Send Message　</button>
+            </form>
+            <div class="social">
+              <ul>
+                <li><a href="https://www.facebook.com/groups/1491484157759543/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://mobile.twitter.com/bikkenara"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="fnav">
+          <p>&copy; 2016 bikke.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="wideslider">
-<ul>
-<li><a href="#1"><img src="photo01.jpg" alt="1" /></a></li>
-<li><a href="#2"><img src="photo02.jpg" alt="2" /></a></li>
-<li><a href="#3"><img src="photo03.jpg" alt="3" /></a></li>
-<li><a href="#4"><img src="q.jpg" alt="4" /></a></li>
-<li><a href="#5"><img src="photo05.jpg" alt="5" /></a></li>
-</ul>
-</div><!--/.wideslider-->
-
-</div><!--/#container-->
-
-<h1><a href="home.html">すみません＞＜<br>工事中です。しばらくお待ちください</a></h1>
-<p><a href="http://www.access-counter.net" target="_blank"><img src="http://www.access-counter.net/services/imagedigits/counter.php?aut=9a474a52ffea77cd50d8a8ce5023145106465f30f227ac1f700f3bc084af0ee7c9186ae7148b088f8d7e3a1c" alt="無料カウンター" border="0" /></a>番目のお客さん,
-ようこそ～～＾＾</p>
 
 
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="js/contact_me.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+  <script type="text/javascript" src="js/effect.js"></script><!--sentence animation-->
+  <script type="text/javascript" src="js/pace.js"></script><!--loading-->
+  <script type="text/javascript" src="js/Chart.min.js"></script>
+  <script type="text/javascript">
+
+    $(function(){
+      if($.cookie("access") == undefined) {
+        $('#top_modal').modal('show');//最初のアクセスの場合にモーダルを呼び出す
+        $.cookie("access","onece");
+        $(".mod_message").css("display","block")
+      } else {
+        //alert("二回目以降");
+      }
+    });
+
+  </script>
 </body>
 </html>

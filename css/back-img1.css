@@ -1,0 +1,34 @@
+.back-img {
+ height: 100vh;
+ padding: 0;
+ margin: 0;
+}
+.back-img::before{
+ background: url("../back/2.jpg");
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ /*background-attachment: fixed;*/
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 99%;
+ height: 100vh;
+ /*padding: 10% 0;*/
+ padding: 0;
+ margin: 0;
+ z-index: -1;
+}
+
+@media screen and (min-width: 940px) {
+ /*980px以上用（PC用）の記述 */
+	.back-img {
+	 background: url("../back/2.jpg") no-repeat fixed center center /cover;
+	 padding: 0;
+	 margin: 0;
+	 height: 100%;
+	}
+}
